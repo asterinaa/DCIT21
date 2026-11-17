@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1b4328;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Registration / Login Box */
+.auth-wrapper {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.auth-box {
+    background-color: #14331e;
+    border: 2px solid #e8b923;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 420px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.auth-title {
+    font-family: Georgia, serif;
+    color: #e8b923;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.auth-subtitle {
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+/* Header & Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.search-bar {
+    background-color: white;
+    border-radius: 20px;
+    padding: 6px 15px;
+    width: 280px;
+    color: gray;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    width: 85%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+nav a:hover, nav a.active {
+    color: #e8b923;
+}
+
+.menu-icon div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/* Main Content */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 50px;
+}
+
+.welcome-banner {
+    color: #e8b923;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.page-title, .section-heading, .about-business h2, .category-main-title {
+    font-family: Georgia, serif;
+    text-transform: uppercase;
+}
+
+.page-title {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.section-heading, .about-business h2 {
+    color: #e8b923;
+    border-bottom: 2px solid #e8b923;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Home Featured Layout */
+.featured-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.main-photo {
+    width: 40%;
+}
+
+.main-photo img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.sub-photos {
+    width: 22%;
+}
+
+.sub-photos img {
+    width: 100%;
+    height: 162px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 12px;
+}
+
+.about-business {
+    width: 38%;
+}
+
+.about-business p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #88a391;
+}
+
+/* Product Categories */
+.category-main-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.category-showcase {
+    display: flex;
+    gap: 25px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.category-item {
+    width: 33%;
+}
+
+.category-item img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 12px;
+}
+
+.category-item h3 {
+    font-family: Georgia, serif;
+    margin-bottom: 8px;
+}
+
+.category-item p {
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+/* Gold Buttons */
+.view-more-btn, .cat-pill-btn {
+    display: block;
+    width: 100%;
+    background-color: #e8b923;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.view-more-btn:hover, .cat-pill-btn:hover {
+    background-color: #d4a617;
+}
+
+/* Boxes, Cards & Forms */
+.section-block {
+    background-color: #14331e;
+    padding: 25px;
+    border-radius: 15px;
+    margin-top: 25px;
+}
+
+.cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.card {
+    background-color: #1b4328;
+    border-left: 4px solid #e8b923;
+    border-radius: 10px;
+    padding: 15px;
+    width: 31%;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    color: #e8b923;
+    margin-bottom: 6px;
+}
+
+.card p {
+    font-size: 13.5px;
+    margin-bottom: 5px;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #e8b923;
+    color: #14331e;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+.badge-type {
+    background-color: white;
+}
+
+.action-btn, .cat-reset-btn {
+    background-color: #1b4328;
+    color: white;
+    border: 1px solid #e8b923;
+    padding: 6px 12px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.action-btn.active, .action-btn:hover, .cat-reset-btn:hover {
+    background-color: #e8b923;
+    color: #14331e;
+}
+
+.list-items {
+    margin-left: 20px;
+}
+
+.list-items li {
+    margin-bottom: 8px;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-group label {
+    display: block;
+    color: #e8b923;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #e8b923;
+    background-color: #1b4328;
+    color: white;
+}
+
+footer {
+    background-color: #112b19;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 2px solid #e8b923;
+    font-size: 13px;
+}
+
+footer h3 {
+    color: #e8b923;
+    margin-bottom: 5px;
+}
