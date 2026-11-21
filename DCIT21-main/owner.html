@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel= "stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <nav>
+    <a href="index.html" id="logoutBtn" style="margin-left: 1400px; margin-top: 20px; border: 2px gold;">Log Out</a>
+   </nav>
+    <h2 id="welcomeUser" class="banner-title">
+        </h2>
+        <h2 class="banner-title"> Vendor Dashboard</h2>
+    <h1 class="banner-description">
+            Publish your products and manage your listings so campus buyers can find you.
+        </h1>
+<div class="vendor-layout">
+    <div class="section-block" id="sellFormSection" style="display: block;">
+            <h2 class="section-heading">Enter Business Profile & Product Details</h2>
+            <form id="addProductForm">
+                <div class="form-group">
+                    <label class="formLabel">Business / Shop Name</label>
+                    <input type="text" id="prodBusiness" placeholder="e.g., Blaise Prints & Crafts" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="formLabel">Product or Service Name</label>
+                    <input type="text" id="prodName" placeholder="e.g., Custom CvSU Lanyard" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="formLabel">Category</label>
+                    <select id="prodCategory">
+                        <option value="Food & Beverages">Food & Beverages</option>
+                        <option value="Customized Items">Customized Items</option>
+                        <option value="Campus Services and Preloved Items">Campus Services and Preloved Items</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="formLabel">Price (₱)</label>
+                    <input type="text" id="prodPrice" placeholder="e.g., ₱65.00" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="formLabel">Product Image Link (Optional)</label>
+                    <input type="url" id="prodImage" placeholder="Paste an image URL (or leave blank for default)">
+                </div>
+
+                <div class="form-group">
+                    <label class="formLabel">About the Product (Description)</label>
+                    <input type="text" id="prodDesc" placeholder="Describe your product, flavors, sizes, or details" required>
+                </div>
+
+                <div class="form-group">
+                    <label style="color: #09201C;">Business Contact & Campus Meet-up Location</label>
+                    <input type="text" id="prodContact" placeholder="e.g., CEIT Lobby | FB: /MyShopCvSU" required>
+                </div>
+
+                <button type="submit" class="view-more-btn">Publish Product to Market</button>
+            </form>
+        </div>
+        <!-- Business Profiles & Product Catalog -->
+        <div class="section-block-business" id="catalogSection" style="max-width: 1000px; background-color: #09201C;">
+            <h2 class="section-heading" style="color: antiquewhite;">My Listing</h2>
+            
+            <div style="margin-bottom: 15px;">
+                <button class="action-btn active" data-action="All">All</button>
+                <button class="action-btn" data-action="Buy">For Sale (To Buy)</button>
+                <button class="action-btn" data-action="Sell">Buyer Requests</button>
+                <button class="cat-reset-btn" id="showAllCategories">Show All Categories</button>
+            </div>
+
+                <div class="card" data-category="Campus Services and Preloved Items" data-action="Buy">
+                    <span class="badge">Campus Services and Preloved Items</span>
+                    <span class="badge badge-type">For Sale</span>
+                    <h3>QuickPrint Indang</h3>
+                    <p><strong>Service:</strong> Rush Document Printing & Binding</p>
+                    <p><strong>Price:</strong> ₱3.00 / page</p>
+                    <p><strong>About:</strong> Same-day colored and B&W printing for portfolios and theses.</p>
+                    <p><strong>Contact:</strong> Main Library Lobby | FB: /QuickPrintCvSU</p>
+                </div>
+            </div>
+        </div>
+</div>
+        <footer>
+        <h3>CVSU MARKET — DCIT 21: Introduction to Computing</h3>
+        <p>Bachelor of Science in Information Technology | Cavite State University - Main</p>
+        <p><strong>Group Members:</strong> Erin Beatrice Espineli &bull; Hanaiah Blaise Mendoza &bull; Denise Kim Reyes</p>
+    </footer>
+    <script>
+        if (!localStorage.getItem("cvsuUser") ||
+            !localStorage.getItem("cvsuRole").includes("Vendor")) {
+            window.location.href = "index.html";
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
