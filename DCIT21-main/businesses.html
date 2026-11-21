@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CVSU MARKET - Businesses & Categories</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="businesses.html" class="active">Businesses</a>
+            <a href="about.html">About</a>
+            <a href="index.html" id="logoutBtn">Log Out</a>
+        </nav>
+
+        <div class="menu-icon" title="Menu">
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+    <h2 id="welcomeUser" class="banner-title">
+        BUSINESSES
+        </h2>
+        <h1 class="banner-description">
+            Browse student-owned shops by category, or search for something specific.
+        </h1>
+        
+    <div class="container-business">
+
+        <h1 class="category-main-title">PRODUCT CATEGORIES</h1>
+
+        <div class="category-showcase">
+            <div class="category-item">
+                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80" alt="Food & Beverages">
+                <h3>Food & Beverages</h3>
+                <p>Homemade snacks, rice bowls, burgers, pastries, and drinks by student vendors.</p>
+                <button class="cat-pill-btn" data-category="Food & Beverages">Click to view more...</button>
+            </div>
+
+            <div class="category-item">
+                <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=600&q=80" alt="Customized Items">
+                <h3>Customized Items</h3>
+                <p>Handmade crochet clips, personalized lanyards, stickers, and academic merch.</p>
+                <button class="cat-pill-btn" data-category="Customized Items">Click to view more...</button>
+            </div>
+
+            <div class="category-item">
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=600&q=80" alt="Campus Services and Preloved Items">
+                <h3>Campus Services and Preloved Items</h3>
+                <p>Printing services, layout editing, thrift clothes, and second-hand textbooks.</p>
+                <button class="cat-pill-btn" data-category="Campus Services and Preloved Items">Click to view more...</button>
+            </div>
+        </div>
+
+        
+        <!-- Student Entrepreneur Form -->
+
+    </div>
+<!-- Business Profiles & Product Catalog -->
+        <div class="section-block-business" id="catalogSection">
+            <h2 class="section-heading">Business Profiles & Product Catalog</h2>
+            
+            <div style="margin-bottom: 15px;">
+                <button class="action-btn active" data-action="All">All</button>
+                <button class="action-btn" data-action="Buy">For Sale (To Buy)</button>
+                <button class="action-btn" data-action="Sell">Buyer Requests</button>
+                <button class="cat-reset-btn" id="showAllCategories">Show All Categories</button>
+            </div>
+ <div class="search-bar">
+            <span>&#128269;</span>
+            <input type="text" placeholder="Search products or categories...">
+        </div> 
+            <div class="cards-grid" id="businessCatalog">
+                <div class="card" data-category="Food & Beverages" data-action="Buy">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Burger">
+                    <span class="badge">Food & Beverages</span>
+                    <span class="badge badge-type">For Sale</span>
+                    <h3>Indang Grill Burgers</h3>
+                    <p><strong>Product:</strong> Classic Double Cheese Burger</p>
+                    <p><strong>Price:</strong> ₱85.00</p>
+                    <p><strong>About:</strong> Freshly grilled beef patty with cheddar cheese and house sauce.</p>
+                    <p><strong>Contact:</strong> CEIT Bldg. Meet-up | FB: /IndangGrillCvSU</p>
+                </div>
+
+                <div class="card" data-category="Food & Beverages" data-action="Buy">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80" alt="Pizza">
+                    <span class="badge">Food & Beverages</span>
+                    <span class="badge badge-type">For Sale</span>
+                    <h3>Hornet Slices</h3>
+                    <p><strong>Product:</strong> Cheesy Pepperoni Overload (Box of 4)</p>
+                    <p><strong>Price:</strong> ₱120.00</p>
+                    <p><strong>About:</strong> Crispy crust topped with mozzarella and savory pepperoni slices.</p>
+                    <p><strong>Contact:</strong> Main Gate Pickup | IG: @hornetslices</p>
+                </div>
+
+                <div class="card" data-category="Customized Items" data-action="Buy">
+                    <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=600&q=80" alt="Custom Crafts">
+                    <span class="badge">Customized Items</span>
+                    <span class="badge badge-type">For Sale</span>
+                    <h3>CEIT Custom Crafts</h3>
+                    <p><strong>Product:</strong> Handmade Crochet Flower Clips & Lanyards</p>
+                    <p><strong>Price:</strong> ₱75.00</p>
+                    <p><strong>About:</strong> Custom crocheted hair clips and printed CvSU ID laces.</p>
+                    <p><strong>Contact:</strong> CSPEAR Area | Messenger: CEITCrafts</p>
+                </div>
+
+                <div class="card" data-category="Campus Services and Preloved Items" data-action="Buy">
+                    <span class="badge">Campus Services and Preloved Items</span>
+                    <span class="badge badge-type">For Sale</span>
+                    <h3>QuickPrint Indang</h3>
+                    <p><strong>Service:</strong> Rush Document Printing & Binding</p>
+                    <p><strong>Price:</strong> ₱3.00 / page</p>
+                    <p><strong>About:</strong> Same-day colored and B&W printing for portfolios and theses.</p>
+                    <p><strong>Contact:</strong> Main Library Lobby | FB: /QuickPrintCvSU</p>
+                </div>
+            </div>
+        </div>
+    <footer>
+        <h3>CVSU MARKET — DCIT 21: Introduction to Computing</h3>
+        <p>Bachelor of Science in Information Technology | Cavite State University - Main</p>
+        <p><strong>Group Members:</strong> Erin Beatrice Espineli &bull; Hanaiah Blaise Mendoza &bull; Denise Kim Reyes</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
